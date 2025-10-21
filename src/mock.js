@@ -2,7 +2,7 @@
 
 export const companyInfo = {
   name: "Rudra Trading Co.",
-  tagline: "Setting Industry Benchmarks for Quality and Excellence",
+  tagline: "Your Reliable Source for Premium Agro Commodities.",
   founded: 2016,
   location: "Jamnagar, Gujarat, India",
   description: "Leading agricultural commodity exporter specializing in sourcing and supplying high-quality grains, pulses, and spices to international markets."
@@ -49,57 +49,52 @@ export const primaryProducts = [
   {
     id: 1,
     name: "Ajwain",
-    hsnCode: "9109914",
     category: "Spices",
-    image: "https://images.unsplash.com/photo-1596040033229-a0b0c2d26d82",
+  image: "/product-images/ajwain.jpg",
     description: "Premium quality ajwain seeds known for their distinctive aroma and medicinal properties."
   },
   {
     id: 2,
     name: "Chickpea",
-    hsnCode: "71320",
     category: "Pulses",
-    image: "https://images.unsplash.com/photo-1610415017394-15e7f6e80856",
+  image: "/product-images/chickpea.jpg",
     description: "High-quality chickpeas, carefully processed to meet international standards."
   },
   {
     id: 3,
     name: "Cumin",
-    hsnCode: "90930",
     category: "Spices",
-    image: "https://images.unsplash.com/photo-1596547609652-bc2e48d48a88",
+  image: "/product-images/cumin.jpg",
     description: "Aromatic cumin seeds sourced from the best farms, ensuring superior quality."
   },
   {
     id: 4,
     name: "Groundnut",
-    hsnCode: "9109914",
     category: "Oilseeds",
-    image: "https://images.unsplash.com/photo-1581515097354-3a46e2c6e0b7",
+  image: "/product-images/groundnut.jpg",
     description: "Premium groundnuts with excellent oil content and taste."
   },
   {
     id: 5,
     name: "Maize",
-    hsnCode: "71320",
     category: "Grains",
-    image: "https://images.unsplash.com/photo-1603569283847-aa295f0d016a",
+  image: "/product-images/maize.jpg",
     description: "High-quality maize kernels ideal for various industrial and food applications."
   },
   {
     id: 6,
     name: "Sesame",
-    hsnCode: "90930",
+
     category: "Oilseeds",
-    image: "https://images.unsplash.com/photo-1607672632458-9eb56696346b",
+  image: "/product-images/sesame.jpg",
     description: "Premium sesame seeds with high oil content and rich flavor."
   },
   {
     id: 7,
     name: "Wheat",
-    hsnCode: "90930",
+
     category: "Grains",
-    image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b",
+  image: "/product-images/wheat.webp",
     description: "Superior quality wheat grains meeting stringent international quality standards."
   }
 ];
@@ -108,153 +103,152 @@ export const secondaryProducts = [
   {
     id: 8,
     name: "Barley",
-    hsnCode: "71320",
+
     category: "Grains",
-    image: "https://images.unsplash.com/photo-1608942504336-0b1896905c0f",
+  image: "/product-images/barley.jpg",
     description: "High-grade barley for brewing, food production, and animal feed."
   },
   {
     id: 9,
     name: "Black Gram",
-    hsnCode: "71320",
+
     category: "Pulses",
-    image: "https://images.unsplash.com/photo-1632394775454-1a74e4f06b66",
+  image: "/product-images/blackgram.webp",
     description: "Premium black gram (urad dal) with consistent quality."
   },
   {
     id: 10,
     name: "Black Sesame",
-    hsnCode: "90930",
+
     category: "Oilseeds",
-    image: "https://images.unsplash.com/photo-1603048588665-791ca8aea617",
+  image: "/product-images/blacksesame.jpg",
     description: "Nutrient-rich black sesame seeds with high antioxidant content."
   },
   {
     id: 11,
     name: "Broad Beans",
-    hsnCode: "71320",
+
     category: "Pulses",
-    image: "https://images.unsplash.com/photo-1512090586019-ca2a0fd1a9b2",
+  image: "/product-images/broadbeans.jpg",
     description: "Fresh, high-quality broad beans ideal for various culinary applications."
   },
   {
     id: 12,
     name: "Castor",
-    hsnCode: "90930",
     category: "Oilseeds",
-    image: "https://images.unsplash.com/photo-1622383563227-04401ab4e5ea",
+    image: "/product-images/castor.webp",
     description: "Premium castor seeds for oil extraction and industrial use."
   },
   {
     id: 13,
     name: "Coriander",
-    hsnCode: "71320",
+
     category: "Spices",
-    image: "https://images.unsplash.com/photo-1611858658172-3ce30a6701e2",
+  image: "/product-images/coriander.jpg",
     description: "Aromatic coriander seeds with rich flavor profile."
   },
   {
     id: 14,
     name: "Cowpea",
-    hsnCode: "90930",
+
     category: "Pulses",
-    image: "https://images.unsplash.com/photo-1603048297900-934e0d33c303",
+  image: "/product-images/cowpea.jpg",
     description: "High-quality cowpeas (black-eyed peas) for diverse applications."
   },
   {
     id: 15,
     name: "Fenugreek",
-    hsnCode: "71320",
+
     category: "Spices",
-    image: "https://images.unsplash.com/photo-1621964318368-7e89d9dcc3dc",
+  image: "/product-images/fenugreek.jpg",
     description: "Premium fenugreek seeds known for their distinctive flavor and health benefits."
   },
   {
     id: 16,
     name: "Garlic",
-    hsnCode: "71320",
+
     category: "Vegetables",
-    image: "https://images.unsplash.com/photo-1588934253901-b1db62c4e4b6",
+  image: "/product-images/garlic.jpg",
     description: "Fresh, high-quality garlic bulbs with strong aroma and flavor."
   },
   {
     id: 17,
     name: "Green Gram",
-    hsnCode: "90930",
+
     category: "Pulses",
-    image: "https://images.unsplash.com/photo-1611171711912-e525a0bc2c4b",
+  image: "/product-images/greengram.jpg",
     description: "Superior quality green gram (mung beans) with excellent nutritional value."
   },
   {
     id: 18,
     name: "Mustard",
-    hsnCode: "71320",
+
     category: "Oilseeds",
-    image: "https://images.unsplash.com/photo-1630336461496-298a3e84dd0e",
+  image: "/product-images/mustard.jpg",
     description: "Premium mustard seeds for oil extraction and culinary use."
   },
   {
     id: 19,
     name: "Onion",
-    hsnCode: "90930",
+
     category: "Vegetables",
-    image: "https://images.unsplash.com/photo-1618512496166-e62dc5e51724",
+  image: "/product-images/onion.png",
     description: "Fresh, quality onions suitable for export and diverse culinary uses."
   },
   {
     id: 20,
     name: "Pearl Millet",
-    hsnCode: "90930",
+
     category: "Grains",
-    image: "https://images.unsplash.com/photo-1600453426988-3b0a4a72e72f",
+  image: "/product-images/pearlmillet.jpg",
     description: "High-quality pearl millet (bajra) rich in nutrients."
   },
   {
     id: 21,
     name: "Peas",
-    hsnCode: "71320",
+
     category: "Pulses",
-    image: "https://images.unsplash.com/photo-1608629113898-d0b018ea3784",
+  image: "/product-images/peas.jpg",
     description: "Premium dried peas with consistent quality and size."
   },
   {
     id: 22,
     name: "Pigeon Pea",
-    hsnCode: "90930",
+
     category: "Pulses",
-    image: "https://images.unsplash.com/photo-1617627143750-d86bc21e41f5",
+  image: "/product-images/pigeonpeas.jpg",
     description: "High-quality pigeon peas (toor dal) ideal for various preparations."
   },
   {
     id: 23,
     name: "Sorghum",
-    hsnCode: "71320",
+
     category: "Grains",
-    image: "https://images.unsplash.com/photo-1627467872964-71646e8e3d83",
+  image: "/product-images/sorghum.jpg",
     description: "Premium sorghum (jowar) grains with excellent nutritional profile."
   },
   {
     id: 24,
     name: "Soyabean",
-    hsnCode: "90930",
+
     category: "Oilseeds",
-    image: "https://images.unsplash.com/photo-1597097416126-b4b26e723e95",
+  image: "/product-images/soyabean.jpg",
     description: "High-protein soybeans suitable for oil extraction and food processing."
   },
   {
     id: 25,
     name: "Turmeric",
-    hsnCode: "71320",
+
     category: "Spices",
-    image: "https://images.unsplash.com/photo-1615485500838-11e01890b023",
+  image: "/product-images/turmeric.jpg",
     description: "Premium quality turmeric with rich color and curcumin content."
   },
   {
     id: 26,
     name: "White Chickpea",
-    hsnCode: "90930",
+
     category: "Pulses",
-    image: "https://images.unsplash.com/photo-1610415017394-15e7f6e80856",
+  image: "/product-images/whitechickpeas.jpg",
     description: "Large white chickpeas (kabuli chana) with excellent quality."
   }
 ];
@@ -275,9 +269,9 @@ export const contactInfo = {
       email: "vipul.nanda@rediffmail.com"
     },
     {
-      name: "Maishva Patel",
-      phone: "+91 9265308286",
-      email: "patelmaishva@gmail.com"
+      name: "Mayurbhai Nanda",
+      phone: "+91 8128670928",
+      email: "rudra_trading@yahoo.com"
     }
   ],
   certifications: ["FSSAI", "AGMARK", "APEDA", "PQMS - Phytosanitary", "IEC"]

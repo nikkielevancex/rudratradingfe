@@ -118,17 +118,6 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Shipping Port */}
-              <div className="info-item mb-8 flex items-start">
-                <div className="icon-wrapper bg-amber-100 p-3 rounded-lg mr-4">
-                  <Clock className="w-6 h-6 text-amber-700" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg text-gray-900 mb-2">Shipping Port</h3>
-                  <p className="text-gray-700">{contactInfo.shippingPort}</p>
-                </div>
-              </div>
-
               {/* Certifications */}
               <div className="certifications mt-8">
                 <h3 className="font-semibold text-lg text-gray-900 mb-4">Certifications & Compliance</h3>
@@ -248,7 +237,7 @@ const Contact = () => {
           <h2 className="text-3xl font-bold text-green-900 mb-8 text-center">Find Us On Map</h2>
           <div className="map-wrapper rounded-xl overflow-hidden shadow-2xl">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.516622436712!2d70.04747931495932!3d22.77083698506087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959b5a6a8e07b63%3A0x1d6e5ca8a8e07b63!2sJamnagar%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59000.267005393674!2d70.07474630257624!3d22.447209918026385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3957697f00751747%3A0x9bc2ee5c3b191b29!2sMarketing%20Yard%2C%20143%2FB%2C%20Hapa%2C%20Gujarat%20361120!5e0!3m2!1sen!2sin!4v1761025161075!5m2!1sen!2sin"
               width="100%"
               height="450"
               style={{ border: 0 }}

@@ -16,8 +16,7 @@ const Products = () => {
   const categories = ['all', ...new Set(allProducts.map(p => p.category))];
 
   const filteredProducts = allProducts.filter(product => {
-    const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                          product.hsnCode.includes(searchTerm);
+  const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesCategory = activeCategory === 'all' || product.category === activeCategory;
     return matchesSearch && matchesCategory;
   });
@@ -42,7 +41,7 @@ const Products = () => {
                 <Search className="absolute left-5 top-1/2 transform -translate-y-1/2 text-green-600 w-6 h-6" />
                 <Input
                   type="text"
-                  placeholder="Search by product name or HSN code..."
+                  placeholder="Search by product name..."
                   className="pl-16 pr-6 py-7 text-lg border-2 border-green-300 focus:border-green-600 rounded-xl shadow-lg bg-white focus:shadow-xl transition-all duration-300"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
@@ -91,7 +90,7 @@ const Products = () => {
                   </div>
                   <div className="product-info p-6">
                     <h3 className="text-2xl font-semibold text-green-900 mb-2">{product.name}</h3>
-                    <p className="text-sm text-gray-600 mb-3">HSN Code: <span className="font-mono font-semibold">{product.hsnCode}</span></p>
+                    {/* HSN Code removed */}
                     <p className="text-gray-700 line-clamp-2">{product.description}</p>
                   </div>
                 </div>

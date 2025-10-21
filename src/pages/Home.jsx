@@ -156,7 +156,6 @@ const Home = () => {
                   </div>
                   <div className="product-info p-6">
                     <h3 className="text-xl font-semibold text-green-900 mb-2">{product.name}</h3>
-                    <p className="text-sm text-gray-600 mb-2">HSN: {product.hsnCode}</p>
                     <p className="text-gray-700 text-sm line-clamp-2">{product.description}</p>
                   </div>
                 </div>

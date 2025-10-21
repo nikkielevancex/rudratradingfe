@@ -103,14 +103,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-6 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-green-300">
             <p>© {currentYear} {companyInfo.name}. All rights reserved.</p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link to="#" className="hover:text-white transition-colors duration-200">
-                Privacy Policy
-              </Link>
-              <Link to="#" className="hover:text-white transition-colors duration-200">
-                Terms of Service
-              </Link>
-            </div>
+            {/* Removed Privacy Policy and Terms of Service links */}
           </div>
         </div>
       </div>

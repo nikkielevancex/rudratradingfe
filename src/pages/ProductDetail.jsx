@@ -63,7 +63,6 @@ const ProductDetail = () => {
                 </span>
               </div>
               <h1 className="text-5xl font-bold text-green-900 mb-4">{product.name}</h1>
-              <p className="text-xl text-gray-600 mb-6">HSN Code: <span className="font-mono font-bold text-green-700">{product.hsnCode}</span></p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">{product.description}</p>
 
               {/* Features */}
@@ -129,7 +128,7 @@ const ProductDetail = () => {
                     </div>
                     <div className="product-info p-6">
                       <h3 className="text-xl font-semibold text-green-900 mb-2">{relatedProduct.name}</h3>
-                      <p className="text-sm text-gray-600 mb-2">HSN: {relatedProduct.hsnCode}</p>
+                      {/* HSN Code removed */}
                     </div>
                   </div>
                 </Link>
