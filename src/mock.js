@@ -53,86 +53,81 @@ export const primaryProducts = [
     id: 1,
     name: "Ajwain",
     category: "Spices",
-  image: getImagePath("/product-images/ajwain.jpg"),
+    image: getImagePath("/product-images/ajwain.jpg"),
     description: "Premium quality ajwain seeds known for their distinctive aroma and medicinal properties."
   },
   {
     id: 2,
     name: "Chickpea",
     category: "Pulses",
-  image: getImagePath("/product-images/chickpea.jpg"),
+    image: getImagePath("/product-images/chickpea.jpg"),
     description: "High-quality chickpeas, carefully processed to meet international standards."
   },
   {
     id: 3,
     name: "Cumin",
     category: "Spices",
-  image: getImagePath("/product-images/cumin.jpg"),
+    image: getImagePath("/product-images/cumin.jpg"),
     description: "Aromatic cumin seeds sourced from the best farms, ensuring superior quality."
   },
   {
     id: 4,
     name: "Groundnut",
     category: "Oilseeds",
-  image: getImagePath("/product-images/groundnut.jpg"),
+    image: getImagePath("/product-images/groundnut.jpg"),
     description: "Premium groundnuts with excellent oil content and taste."
   },
   {
     id: 5,
     name: "Maize",
     category: "Grains",
-  image: getImagePath("/product-images/maize.jpg"),
+    image: getImagePath("/product-images/maize.jpg"),
     description: "High-quality maize kernels ideal for various industrial and food applications."
   },
   {
     id: 6,
     name: "Sesame",
-
     category: "Oilseeds",
-  image: getImagePath("/product-images/sesame.jpg"),
+    image: getImagePath("/product-images/sesame.jpg"),
     description: "Premium sesame seeds with high oil content and rich flavor."
   },
   {
     id: 7,
     name: "Wheat",
-
     category: "Grains",
-  image: getImagePath("/product-images/wheat.webp"),
+    image: getImagePath("/product-images/wheat.webp"),
     description: "Superior quality wheat grains meeting stringent international quality standards."
   }
 ];
 
 export const secondaryProducts = [
+
   {
     id: 8,
     name: "Barley",
-
     category: "Grains",
-  image: getImagePath("/product-images/barley.jpg"),
+    image: getImagePath("/product-images/barley.jpg"),
     description: "High-grade barley for brewing, food production, and animal feed."
   },
   {
     id: 9,
     name: "Black Gram",
-
     category: "Pulses",
-  image: getImagePath("/product-images/blackgram.webp"),
+    image: getImagePath("/product-images/blackgram.webp"),
     description: "Premium black gram (urad dal) with consistent quality."
   },
   {
     id: 10,
     name: "Black Sesame",
-
     category: "Oilseeds",
-  image: getImagePath("/product-images/blacksesame.jpg"),
+    image: getImagePath("/product-images/blacksesame.jpg"),
     description: "Nutrient-rich black sesame seeds with high antioxidant content."
   },
   {
     id: 11,
     name: "Broad Beans",
-
     category: "Pulses",
-  image: getImagePath("/product-images/broadbeans.jpg"),
+    image: getImagePath("/product-images/broadbeans.jpg"),
     description: "Fresh, high-quality broad beans ideal for various culinary applications."
   },
   {
@@ -145,33 +140,29 @@ export const secondaryProducts = [
   {
     id: 13,
     name: "Coriander",
-
     category: "Spices",
-  image: getImagePath("/product-images/coriander.jpg"),
+    image: getImagePath("/product-images/coriander.jpg"),
     description: "Aromatic coriander seeds with rich flavor profile."
   },
   {
     id: 14,
     name: "Cowpea",
-
     category: "Pulses",
-  image: getImagePath("/product-images/cowpea.jpg"),
+    image: getImagePath("/product-images/cowpea.jpg"),
     description: "High-quality cowpeas (black-eyed peas) for diverse applications."
   },
   {
     id: 15,
     name: "Fenugreek",
-
     category: "Spices",
-  image: getImagePath("/product-images/fenugreek.jpg"),
+    image: getImagePath("/product-images/fenugreek.jpg"),
     description: "Premium fenugreek seeds known for their distinctive flavor and health benefits."
   },
   {
     id: 16,
     name: "Garlic",
-
     category: "Vegetables",
-  image: getImagePath("/product-images/garlic.jpg"),
+    image: getImagePath("/product-images/garlic.jpg"),
     description: "Fresh, high-quality garlic bulbs with strong aroma and flavor."
   },
   {
@@ -179,7 +170,7 @@ export const secondaryProducts = [
     name: "Green Gram",
 
     category: "Pulses",
-  image: getImagePath("/product-images/greengram.jpg"),
+    image: getImagePath("/product-images/greengram.jpg"),
     description: "Superior quality green gram (mung beans) with excellent nutritional value."
   },
   {
@@ -187,72 +178,78 @@ export const secondaryProducts = [
     name: "Mustard",
 
     category: "Oilseeds",
-  image: getImagePath("/product-images/mustard.jpg"),
+    image: getImagePath("/product-images/mustard.jpg"),
     description: "Premium mustard seeds for oil extraction and culinary use."
   },
   {
     id: 19,
     name: "Onion",
-
     category: "Vegetables",
-  image: getImagePath("/product-images/onion.png"),
+    image: getImagePath("/product-images/onion.png"),
     description: "Fresh, quality onions suitable for export and diverse culinary uses."
   },
   {
     id: 20,
     name: "Pearl Millet",
-
     category: "Grains",
-  image: getImagePath("/product-images/pearlmillet.jpg"),
+    image: getImagePath("/product-images/pearlmillet.jpg"),
     description: "High-quality pearl millet (bajra) rich in nutrients."
   },
   {
     id: 21,
     name: "Peas",
-
     category: "Pulses",
-  image: getImagePath("/product-images/peas.jpg"),
+    image: getImagePath("/product-images/peas.jpg"),
     description: "Premium dried peas with consistent quality and size."
   },
   {
     id: 22,
     name: "Pigeon Pea",
-
     category: "Pulses",
-  image: getImagePath("/product-images/pigeonpeas.jpg"),
+    image: getImagePath("/product-images/pigeonpeas.jpg"),
     description: "High-quality pigeon peas (toor dal) ideal for various preparations."
   },
   {
     id: 23,
     name: "Sorghum",
-
     category: "Grains",
-  image: getImagePath("/product-images/sorghum.jpg"),
+    image: getImagePath("/product-images/sorghum.jpg"),
     description: "Premium sorghum (jowar) grains with excellent nutritional profile."
   },
   {
     id: 24,
     name: "Soyabean",
-
     category: "Oilseeds",
-  image: getImagePath("/product-images/soyabean.jpg"),
+    image: getImagePath("/product-images/soyabean.jpg"),
     description: "High-protein soybeans suitable for oil extraction and food processing."
   },
   {
     id: 25,
     name: "Turmeric",
-
     category: "Spices",
-  image: getImagePath("/product-images/turmeric.jpg"),
+    image: getImagePath("/product-images/turmeric.jpg"),
     description: "Premium quality turmeric with rich color and curcumin content."
   },
   {
     id: 26,
     name: "White Chickpea",
-
     category: "Pulses",
-  image: getImagePath("/product-images/whitechickpeas.jpg"),
+    image: getImagePath("/product-images/whitechickpeas.jpg"),
     description: "Large white chickpeas (kabuli chana) with excellent quality."
+  },
+  {
+    id: 27,
+    name: "Castor Oil",
+    category: "Oilseeds",
+    image: getImagePath("/product-images/castoroil.jpg"),
+    description: "High-quality castor oil extracted from premium castor seeds."
+  },
+  {
+    id: 28,
+    name: "Castor de-oiled cake",
+    category: "Oilseeds",
+    image: getImagePath("/product-images/castor_deoiled_cake.jpg"),
+    description: "Nutrient-rich castor de-oiled cake used as organic fertilizer and animal feed."
   }
 ];
 
@@ -264,7 +261,6 @@ export const contactInfo = {
   state: "Gujarat",
   country: "India",
   pincode: "361120",
-  shippingPort: "Mundra Port (INDIA)",
   contacts: [
     {
       name: "Vipulbhai Nanda",
@@ -284,10 +280,6 @@ export const faqs = [
   {
     question: "What are your packing options?",
     answer: "We offer customizable packing solutions including jute bags, PP bags, and vacuum packaging based on product requirements and international shipping standards."
-  },
-  {
-    question: "Which port do you ship from?",
-    answer: "Our primary shipping location is Mundra Port, India, which offers excellent connectivity to global destinations."
   },
   {
     question: "What are your payment terms?",

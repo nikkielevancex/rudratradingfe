@@ -93,7 +93,6 @@ const Footer = () => {
                 <Instagram className="w-5 h-5" />
               </a>
             </div>
-            <p className="text-green-300 text-sm">Shipping from {contactInfo.shippingPort}</p>
           </div>
         </div>
       </div>
