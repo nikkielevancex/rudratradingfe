@@ -67,8 +67,8 @@ app.post('/contact', async (req, res) => {
         email: 'rudratradingorg@gmail.com' 
     };
     sendSmtpEmail.to = [{ 
-        email: 'vgajjar1010@gmail.com', 
-        name: 'Rudra Trading Co' 
+        email: 'rudra_trading@yahoo.com', 
+        name: 'Rudra Trading Co.' 
     }];
     sendSmtpEmail.subject = `New Contact Form Submission from ${name}`;
     sendSmtpEmail.htmlContent = `<html>
