@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="footer-section">
             <div className="bg-white/90 rounded-lg p-3 inline-block mb-4">
               <img 
-                src="/logo.png" 
+                src={`${process.env.PUBLIC_URL}/logo.png`}
                 alt={companyInfo.name} 
                 className="h-14 w-auto"
               />
