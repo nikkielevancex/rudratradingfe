@@ -1,8 +1,9 @@
 
 import express from 'express';
-import nodemailer from 'nodemailer';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import SibApiV3Sdk from '@sendinblue/client';
+
 dotenv.config();
 
 const app = express();
@@ -45,29 +46,32 @@ app.post('/contact', async (req, res) => {
         });
     }
 
-    // Check if GMAIL_APP_PASSWORD is set
-    if (!process.env.GMAIL_APP_PASSWORD) {
-        console.error('GMAIL_APP_PASSWORD environment variable is not set');
+    // Check if BREVO_API_KEY is set
+    if (!process.env.BREVO_API_KEY) {
+        console.error('BREVO_API_KEY environment variable is not set');
         return res.status(500).json({ 
             success: false, 
             message: 'Email service configuration error.' 
         });
     }
 
-    const transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-            user: 'rudratradingorg@gmail.com',
-            pass: process.env.GMAIL_APP_PASSWORD
-        }
-    });
+    // Initialize Brevo client
+    const apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
+    const apiKey = apiInstance.authentications['apiKey'];
+    apiKey.apiKey = process.env.BREVO_API_KEY;
 
-    const mailOptions = {
-        from: 'rudratradingorg@gmail.com',
-        to: 'rudra_trading@yahoo.com',
-        subject: `New Contact Form Submission from ${name}`,
-        text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nCompany: ${company}\nMessage: ${message}`,
-        html: `<html>
+    const sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
+    
+    sendSmtpEmail.sender = { 
+        name: 'Rudra Trading Co. Website', 
+        email: 'rudratradingorg@gmail.com' 
+    };
+    sendSmtpEmail.to = [{ 
+        email: 'rudra_trading@yahoo.com', 
+        name: 'Rudra Trading Co.' 
+    }];
+    sendSmtpEmail.subject = `New Contact Form Submission from ${name}`;
+    sendSmtpEmail.htmlContent = `<html>
   <head>
     <style>
       body {
@@ -120,32 +124,27 @@ app.post('/contact', async (req, res) => {
       <div class="content">
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Phone:</strong> ${phone}</p>
-        <p><strong>Company:</strong> ${company}</p>
+        <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
+        <p><strong>Company:</strong> ${company || 'Not provided'}</p>
         <p><strong>Message:</strong><br>${message}</p>
       </div>
       <div class="footer">
         <p>Rudra Trading Co.<br>
         A-75 Marketing Yard, Hapa Industrial Area, Jamnagar, Gujarat, India - 361120<br>
-        🌐 <a href="http://rudra-trading.com" style="color:#2e7d32;text-decoration:none;">rudra-trading.com</a></p>
+        🌐 <a href="https://rudra-trading.com" style="color:#2e7d32;text-decoration:none;">rudra-trading.com</a></p>
       </div>
     </div>
   </body>
-</html>
-`
-    };
+</html>`;
+    sendSmtpEmail.textContent = `Name: ${name}\nEmail: ${email}\nPhone: ${phone || 'Not provided'}\nCompany: ${company || 'Not provided'}\nMessage: ${message}`;
 
     try {
-        await transporter.sendMail(mailOptions);
+        await apiInstance.sendTransacEmail(sendSmtpEmail);
         console.log(`Email sent successfully for ${name} (${email})`);
         res.status(200).json({ success: true, message: 'Message sent successfully.' });
     } catch (error) {
         console.error('Error sending email:', error);
-        console.error('Error details:', {
-            code: error.code,
-            command: error.command,
-            response: error.response
-        });
+        console.error('Error details:', error.response?.body || error.message);
         res.status(500).json({ 
             success: false, 
             message: 'Failed to send message. Please try again later or contact us directly.',
