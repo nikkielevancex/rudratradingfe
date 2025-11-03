@@ -28,7 +28,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
-              src="/logo.png" 
+              src={`${process.env.PUBLIC_URL}/logo.png`}
               alt={companyInfo.name} 
               className="h-16 md:h-20 lg:h-24 w-auto"
             />
@@ -40,7 +40,7 @@ const Header = () => {
               link.isBrochure ? (
                 <a
                   key={link.path}
-                  href="/brochure.pdf"
+                  href={`${process.env.PUBLIC_URL}/brochure.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="nav-link text-lg font-medium text-gray-700 hover:text-green-700 transition-colors duration-200"
@@ -84,7 +84,7 @@ const Header = () => {
               link.isBrochure ? (
                 <a
                   key={link.path}
-                  href="/brochure.pdf"
+                  href={`${process.env.PUBLIC_URL}/brochure.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block py-3 text-lg font-medium text-gray-700 hover:text-green-700 transition-colors duration-200"

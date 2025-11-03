@@ -1,5 +1,8 @@
 // Mock data for Rudra Trading Company
 
+// Helper function to get proper image path
+const getImagePath = (imagePath) => `${process.env.PUBLIC_URL}${imagePath}`;
+
 export const companyInfo = {
   name: "Rudra Trading Co.",
   tagline: "Your Reliable Source for Premium Agro Commodities.",
@@ -50,35 +53,35 @@ export const primaryProducts = [
     id: 1,
     name: "Ajwain",
     category: "Spices",
-  image: "/product-images/ajwain.jpg",
+  image: getImagePath("/product-images/ajwain.jpg"),
     description: "Premium quality ajwain seeds known for their distinctive aroma and medicinal properties."
   },
   {
     id: 2,
     name: "Chickpea",
     category: "Pulses",
-  image: "/product-images/chickpea.jpg",
+  image: getImagePath("/product-images/chickpea.jpg"),
     description: "High-quality chickpeas, carefully processed to meet international standards."
   },
   {
     id: 3,
     name: "Cumin",
     category: "Spices",
-  image: "/product-images/cumin.jpg",
+  image: getImagePath("/product-images/cumin.jpg"),
     description: "Aromatic cumin seeds sourced from the best farms, ensuring superior quality."
   },
   {
     id: 4,
     name: "Groundnut",
     category: "Oilseeds",
-  image: "/product-images/groundnut.jpg",
+  image: getImagePath("/product-images/groundnut.jpg"),
     description: "Premium groundnuts with excellent oil content and taste."
   },
   {
     id: 5,
     name: "Maize",
     category: "Grains",
-  image: "/product-images/maize.jpg",
+  image: getImagePath("/product-images/maize.jpg"),
     description: "High-quality maize kernels ideal for various industrial and food applications."
   },
   {
@@ -86,7 +89,7 @@ export const primaryProducts = [
     name: "Sesame",
 
     category: "Oilseeds",
-  image: "/product-images/sesame.jpg",
+  image: getImagePath("/product-images/sesame.jpg"),
     description: "Premium sesame seeds with high oil content and rich flavor."
   },
   {
@@ -94,7 +97,7 @@ export const primaryProducts = [
     name: "Wheat",
 
     category: "Grains",
-  image: "/product-images/wheat.webp",
+  image: getImagePath("/product-images/wheat.webp"),
     description: "Superior quality wheat grains meeting stringent international quality standards."
   }
 ];
@@ -105,7 +108,7 @@ export const secondaryProducts = [
     name: "Barley",
 
     category: "Grains",
-  image: "/product-images/barley.jpg",
+  image: getImagePath("/product-images/barley.jpg"),
     description: "High-grade barley for brewing, food production, and animal feed."
   },
   {
@@ -113,7 +116,7 @@ export const secondaryProducts = [
     name: "Black Gram",
 
     category: "Pulses",
-  image: "/product-images/blackgram.webp",
+  image: getImagePath("/product-images/blackgram.webp"),
     description: "Premium black gram (urad dal) with consistent quality."
   },
   {
@@ -121,7 +124,7 @@ export const secondaryProducts = [
     name: "Black Sesame",
 
     category: "Oilseeds",
-  image: "/product-images/blacksesame.jpg",
+  image: getImagePath("/product-images/blacksesame.jpg"),
     description: "Nutrient-rich black sesame seeds with high antioxidant content."
   },
   {
@@ -129,14 +132,14 @@ export const secondaryProducts = [
     name: "Broad Beans",
 
     category: "Pulses",
-  image: "/product-images/broadbeans.jpg",
+  image: getImagePath("/product-images/broadbeans.jpg"),
     description: "Fresh, high-quality broad beans ideal for various culinary applications."
   },
   {
     id: 12,
     name: "Castor",
     category: "Oilseeds",
-    image: "/product-images/castor.webp",
+    image: getImagePath("/product-images/castor.webp"),
     description: "Premium castor seeds for oil extraction and industrial use."
   },
   {
@@ -144,7 +147,7 @@ export const secondaryProducts = [
     name: "Coriander",
 
     category: "Spices",
-  image: "/product-images/coriander.jpg",
+  image: getImagePath("/product-images/coriander.jpg"),
     description: "Aromatic coriander seeds with rich flavor profile."
   },
   {
@@ -152,7 +155,7 @@ export const secondaryProducts = [
     name: "Cowpea",
 
     category: "Pulses",
-  image: "/product-images/cowpea.jpg",
+  image: getImagePath("/product-images/cowpea.jpg"),
     description: "High-quality cowpeas (black-eyed peas) for diverse applications."
   },
   {
@@ -160,7 +163,7 @@ export const secondaryProducts = [
     name: "Fenugreek",
 
     category: "Spices",
-  image: "/product-images/fenugreek.jpg",
+  image: getImagePath("/product-images/fenugreek.jpg"),
     description: "Premium fenugreek seeds known for their distinctive flavor and health benefits."
   },
   {
@@ -168,7 +171,7 @@ export const secondaryProducts = [
     name: "Garlic",
 
     category: "Vegetables",
-  image: "/product-images/garlic.jpg",
+  image: getImagePath("/product-images/garlic.jpg"),
     description: "Fresh, high-quality garlic bulbs with strong aroma and flavor."
   },
   {
@@ -176,7 +179,7 @@ export const secondaryProducts = [
     name: "Green Gram",
 
     category: "Pulses",
-  image: "/product-images/greengram.jpg",
+  image: getImagePath("/product-images/greengram.jpg"),
     description: "Superior quality green gram (mung beans) with excellent nutritional value."
   },
   {
@@ -184,7 +187,7 @@ export const secondaryProducts = [
     name: "Mustard",
 
     category: "Oilseeds",
-  image: "/product-images/mustard.jpg",
+  image: getImagePath("/product-images/mustard.jpg"),
     description: "Premium mustard seeds for oil extraction and culinary use."
   },
   {
@@ -192,7 +195,7 @@ export const secondaryProducts = [
     name: "Onion",
 
     category: "Vegetables",
-  image: "/product-images/onion.png",
+  image: getImagePath("/product-images/onion.png"),
     description: "Fresh, quality onions suitable for export and diverse culinary uses."
   },
   {
@@ -200,7 +203,7 @@ export const secondaryProducts = [
     name: "Pearl Millet",
 
     category: "Grains",
-  image: "/product-images/pearlmillet.jpg",
+  image: getImagePath("/product-images/pearlmillet.jpg"),
     description: "High-quality pearl millet (bajra) rich in nutrients."
   },
   {
@@ -208,7 +211,7 @@ export const secondaryProducts = [
     name: "Peas",
 
     category: "Pulses",
-  image: "/product-images/peas.jpg",
+  image: getImagePath("/product-images/peas.jpg"),
     description: "Premium dried peas with consistent quality and size."
   },
   {
@@ -216,7 +219,7 @@ export const secondaryProducts = [
     name: "Pigeon Pea",
 
     category: "Pulses",
-  image: "/product-images/pigeonpeas.jpg",
+  image: getImagePath("/product-images/pigeonpeas.jpg"),
     description: "High-quality pigeon peas (toor dal) ideal for various preparations."
   },
   {
@@ -224,7 +227,7 @@ export const secondaryProducts = [
     name: "Sorghum",
 
     category: "Grains",
-  image: "/product-images/sorghum.jpg",
+  image: getImagePath("/product-images/sorghum.jpg"),
     description: "Premium sorghum (jowar) grains with excellent nutritional profile."
   },
   {
@@ -232,7 +235,7 @@ export const secondaryProducts = [
     name: "Soyabean",
 
     category: "Oilseeds",
-  image: "/product-images/soyabean.jpg",
+  image: getImagePath("/product-images/soyabean.jpg"),
     description: "High-protein soybeans suitable for oil extraction and food processing."
   },
   {
@@ -240,7 +243,7 @@ export const secondaryProducts = [
     name: "Turmeric",
 
     category: "Spices",
-  image: "/product-images/turmeric.jpg",
+  image: getImagePath("/product-images/turmeric.jpg"),
     description: "Premium quality turmeric with rich color and curcumin content."
   },
   {
@@ -248,7 +251,7 @@ export const secondaryProducts = [
     name: "White Chickpea",
 
     category: "Pulses",
-  image: "/product-images/whitechickpeas.jpg",
+  image: getImagePath("/product-images/whitechickpeas.jpg"),
     description: "Large white chickpeas (kabuli chana) with excellent quality."
   }
 ];
