@@ -39,6 +39,11 @@ const Contact = () => {
         },
         body: JSON.stringify(formData)
       });
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      
       const result = await response.json();
       if (result.success) {
         toast({
@@ -60,9 +65,10 @@ const Contact = () => {
         });
       }
     } catch (error) {
+      console.error('Contact form error:', error);
       toast({
         title: "Error",
-        description: "Failed to send message. Please try again later.",
+        description: "Failed to send message. The server might be waking up. Please try again in a moment.",
         variant: "destructive"
       });
     } finally {

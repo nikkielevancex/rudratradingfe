@@ -8,11 +8,51 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+// CORS configuration - allow all origins for testing
+app.use(cors({
+    origin: '*',
+    methods: ['GET', 'POST', 'OPTIONS'],
+    allowedHeaders: ['Content-Type']
+}));
 app.use(express.json());
+
+// Health check endpoint
+app.get('/', (req, res) => {
+    res.status(200).json({ 
+        status: 'ok', 
+        message: 'Rudra Trading SMTP Server is running',
+        timestamp: new Date().toISOString()
+    });
+});
+
+// Health check endpoint
+app.get('/health', (req, res) => {
+    res.status(200).json({ 
+        status: 'healthy', 
+        service: 'SMTP Server',
+        timestamp: new Date().toISOString()
+    });
+});
 
 app.post('/contact', async (req, res) => {
     const { name, email, phone, company, message } = req.body;
+
+    // Validate required fields
+    if (!name || !email || !message) {
+        return res.status(400).json({ 
+            success: false, 
+            message: 'Name, email, and message are required fields.' 
+        });
+    }
+
+    // Check if GMAIL_APP_PASSWORD is set
+    if (!process.env.GMAIL_APP_PASSWORD) {
+        console.error('GMAIL_APP_PASSWORD environment variable is not set');
+        return res.status(500).json({ 
+            success: false, 
+            message: 'Email service configuration error.' 
+        });
+    }
 
     const transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -97,10 +137,20 @@ app.post('/contact', async (req, res) => {
 
     try {
         await transporter.sendMail(mailOptions);
+        console.log(`Email sent successfully for ${name} (${email})`);
         res.status(200).json({ success: true, message: 'Message sent successfully.' });
     } catch (error) {
         console.error('Error sending email:', error);
-        res.status(500).json({ success: false, message: 'Failed to send message.' });
+        console.error('Error details:', {
+            code: error.code,
+            command: error.command,
+            response: error.response
+        });
+        res.status(500).json({ 
+            success: false, 
+            message: 'Failed to send message. Please try again later or contact us directly.',
+            error: process.env.NODE_ENV === 'development' ? error.message : undefined
+        });
     }
 });
 
