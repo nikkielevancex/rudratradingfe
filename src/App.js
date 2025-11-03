@@ -12,7 +12,7 @@ import { Toaster } from "./components/ui/sonner";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="/rudratradingfe">
+      <BrowserRouter>
         <Header />
         <main className="min-h-screen">
           <Routes>
