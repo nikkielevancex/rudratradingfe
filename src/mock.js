@@ -265,12 +265,12 @@ export const contactInfo = {
     {
       name: "Vipulbhai Nanda",
       phone: "+91 9904936085",
-      email: "vipul.nanda@rediffmail.com"
+      email: "info@rudra-trading.com"
     },
     {
       name: "Mayurbhai Nanda",
       phone: "+91 8128670928",
-      email: "rudra_trading@yahoo.com"
+      email: "krish@rudra-trading.com"
     }
   ],
   certifications: ["FSSAI", "AGMARK", "APEDA", "PQMS - Phytosanitary", "IEC"]
