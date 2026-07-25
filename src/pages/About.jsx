@@ -24,16 +24,13 @@ const About = () => {
             <div>
               <h2 className="text-4xl font-bold text-green-900 mb-6">Who We Are</h2>
               <p className="text-lg text-gray-700 mb-6">
-                <strong className="text-green-800">{companyInfo.name}</strong> was founded and began operations in {companyInfo.founded} in {companyInfo.location}. 
-                Over the years, we have become a leading name in the agricultural trading industry.
+                <strong className="text-green-800">{companyInfo.name}</strong> was founded and began operations in {companyInfo.founded} in {companyInfo.location}. Over the years, we have become a leading name in the agricultural trading industry.
               </p>
               <p className="text-lg text-gray-700 mb-6">
-                We specialize in sourcing and supplying a wide variety of high-quality agricultural commodities, 
-                including grains, pulses, oilseeds, spices, and vegetables to international markets.
+                We cultivate Groundnuts and Maize on our own farms and source other premium agricultural products from our trusted network of farmers. We supply high-quality grains, pulses, oilseeds, spices, feed ingredients, vegetables, and other agro commodities, with a focus on serving domestic customers and building strong capabilities for international trade and export markets.
               </p>
               <p className="text-lg text-gray-700">
-                Jamnagar holds crucial strategic importance as a key commodity hub for export, allowing us to 
-                efficiently manage and ship products to global clients with a smooth, reliable supply chain.
+                Jamnagar holds strategic importance as a key commodity hub, providing excellent connectivity to major ports and supporting efficient export operations with a reliable supply chain.
               </p>
             </div>
             <div className="relative">

@@ -21,7 +21,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-green-200 mb-4">{companyInfo.tagline}</p>
-            <p className="text-green-300 text-sm">Leading agricultural commodity exporter since {companyInfo.founded}</p>
+            <p className="text-green-300 text-sm">Agro commodity supplier since {companyInfo.founded}</p>
           </div>
 
           {/* Quick Links */}
@@ -54,25 +54,30 @@ const Footer = () => {
           {/* Contact Info */}
           <div className="footer-section">
             <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
-            <ul className="space-y-3">
+            <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 mr-2 flex-shrink-0 mt-1 text-green-300" />
                 <span className="text-green-200 text-sm">
                   {contactInfo.city}, {contactInfo.state}
                 </span>
               </li>
-              <li className="flex items-center">
-                <Phone className="w-5 h-5 mr-2 flex-shrink-0 text-green-300" />
-                <a href={`tel:${contactInfo.contacts[0].phone}`} className="text-green-200 hover:text-white text-sm">
-                  {contactInfo.contacts[0].phone}
-                </a>
-              </li>
-              <li className="flex items-center">
-                <Mail className="w-5 h-5 mr-2 flex-shrink-0 text-green-300" />
-                <a href={`mailto:${contactInfo.contacts[0].email}`} className="text-green-200 hover:text-white text-sm break-all">
-                  {contactInfo.contacts[0].email}
-                </a>
-              </li>
+              {contactInfo.contacts.map((contact, index) => (
+                <li key={index} className="space-y-1">
+                  <p className="text-sm font-semibold text-green-200">{contact.type}</p>
+                  <div className="flex items-center">
+                    <Phone className="w-5 h-5 mr-2 flex-shrink-0 text-green-300" />
+                    <a href={`tel:${contact.phone}`} className="text-green-200 hover:text-white text-sm">
+                      {contact.phone}
+                    </a>
+                  </div>
+                  <div className="flex items-center">
+                    <Mail className="w-5 h-5 mr-2 flex-shrink-0 text-green-300" />
+                    <a href={`mailto:${contact.email}`} className="text-green-200 hover:text-white text-sm break-all">
+                      {contact.email}
+                    </a>
+                  </div>
+                </li>
+              ))}
             </ul>
           </div>
 

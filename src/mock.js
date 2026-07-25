@@ -8,7 +8,7 @@ export const companyInfo = {
   tagline: "Your Reliable Source for Premium Agro Commodities.",
   founded: 2016,
   location: "Jamnagar, Gujarat, India",
-  description: "Leading agricultural commodity exporter specializing in sourcing and supplying high-quality grains, pulses, and spices to international markets."
+  description: "Agro commodity supplier specializing in cultivating, sourcing, and supplying high-quality Groundnuts, Maize, grains, pulses, spices, and feed ingredients for global trade."
 };
 
 export const mission = "To become the most trusted name in agricultural trading by providing superior quality products and exceptional service, while building lasting client relationships through integrity and a customer-centric approach.";
@@ -263,11 +263,13 @@ export const contactInfo = {
   pincode: "361120",
   contacts: [
     {
+      type: "General",
       name: "Vipulbhai Nanda",
       phone: "+91 9904936085",
-      email: "info@rudra-trading.com"
+      email: "Info@rudra-trading.com"
     },
     {
+      type: "Sales",
       name: "Mayurbhai Nanda",
       phone: "+91 8128670928",
       email: "krish@rudra-trading.com"

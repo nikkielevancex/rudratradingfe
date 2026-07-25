@@ -135,15 +135,17 @@ const Contact = () => {
                   <Mail className="w-6 h-6 text-green-700" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg text-gray-900 mb-2">Email Addresses</h3>
+                  <h3 className="font-semibold text-lg text-gray-900 mb-2">Email Contacts</h3>
                   {contactInfo.contacts.map((contact, index) => (
-                    <a 
-                      key={index}
-                      href={`mailto:${contact.email}`} 
-                      className="block text-green-700 hover:text-green-900 mb-1"
-                    >
-                      {contact.email}
-                    </a>
+                    <div key={index} className="mb-4">
+                      <p className="text-sm font-semibold text-gray-900 mb-1">{contact.type}</p>
+                      <a
+                        href={`mailto:${contact.email}`}
+                        className="block text-green-700 hover:text-green-900"
+                      >
+                        {contact.email}
+                      </a>
+                    </div>
                   ))}
                 </div>
               </div>
